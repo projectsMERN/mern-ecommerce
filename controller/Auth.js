@@ -303,7 +303,7 @@ exports.otpVerification = async (req, res) => {
   const subject = 'Tata Play Ecom OTP verification';
   const html = `<p>You otp is: '${otp}'</p>`;
 
-  // const response = await sendMail({ to: email, subject, html });
+  const response = await sendMail({ to: email, subject, html });
   
   // springedge.messages.send(params, 5000, function (err, response) {
   //   if (err) {
